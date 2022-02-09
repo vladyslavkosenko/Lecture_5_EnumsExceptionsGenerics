@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Confirm the password");
         String confirmPassword = in.nextLine();
         User user = new User(login, password, confirmPassword);
-        user.start(password, login, confirmPassword);
+        user.start();
 
     }
 }

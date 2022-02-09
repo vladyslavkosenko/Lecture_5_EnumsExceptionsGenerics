@@ -13,7 +13,7 @@ public class User {
     }
 
 
-    public void start(String password, String login, String confirmPassword) {
+    public void start() {
         try {
             if (!login.matches("^[a-zA-Z0-9_]+$") || login.length() >= 20) {
                 throw new WrongLoginException("Wrong login");
